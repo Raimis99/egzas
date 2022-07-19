@@ -37,9 +37,9 @@ class Contact extends BaseController
         if ($errors) {
             $this->render('parts/errors', compact('errors'));
         } else {
-            $record = new Record();
+            $registration = new club();
 
-            $record->create([
+            $registration->create([
                 'name' => $name,
                 'surname' => $surname,
                 'email' => $email,
